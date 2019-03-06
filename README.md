@@ -1,2 +1,3 @@
 # hyperdope
-You don't want to know.
+gets you high by math-hacking into your brain.
+you don't even have to watch.
