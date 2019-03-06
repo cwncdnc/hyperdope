@@ -1,9 +1,16 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.canwenotcare.hyperdope" version="1.81" xmlns="http://www.w3.org/ns/widgets">
-  <name>HyperDope</name>
-  <description>A naked singularity.</description>
-  <author email="canwenotcare@gmail.com">
-  <preference name="permissions" value="none" />
-  <preference name="target-device" value="universal" />
-  <icon src="icon.png" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.canwenotcare.hyperdope"
+    version     = "1.0.0" >
+  <name>Hyperdope</name>
+
+  <description>
+      You win!
+  </description>
+
+  <author href="https://reddit.com/r/metamon" email="joyowns@gmail.com">
+      Joy Owns You
+  </author>
+
 </widget>
