@@ -115,7 +115,7 @@ var rdraw = function() {
     var rhspot = rrow * rhstep;
     for(var rsquare=0;rsquare<26;rsquare++){
       var rwspot = rsquare * rwstep;
-      rfill(rweight[rrow][rsquare]);
+      rfill(8*(rweight[rrow][rsquare]-23));
       rvc.fillRect(rwspot,rhspot,rwstep,rhstep);
     }
   }

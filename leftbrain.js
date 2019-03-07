@@ -114,7 +114,7 @@ var ldraw = function() {
     var lhspot = lrow * lhstep;
     for(var lsquare=0;lsquare<26;lsquare++){
       var lwspot = lsquare * lwstep;
-      lfill(lweight[lrow][lsquare]);
+      lfill(8*(lweight[lrow][lsquare]-23));
       lvc.fillRect(lwspot,lhspot,lwstep,lhstep);
     }
   }
