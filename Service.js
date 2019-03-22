@@ -52,8 +52,7 @@ function pulse() {
 		var varray = new Uint16Array(1);
 		var vcode = Math.floor(Math.random()*256*256);
 		if(vcode<3650){
-		    app.TextToSpeech( vocabulary[vcode%365], 
-		    vcode/3650, 0.5);
+
 		chrome.tts.speak(vocabulary[vcode%365]);
 			 
 		}
