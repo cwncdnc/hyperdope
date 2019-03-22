@@ -153,7 +153,7 @@ var rwordcycle = function(){
 var rpulseinterval = null;
 function rpulse() {
     window.clearTimeout(rpulseinterval);
-    rpulseinterval = window.setTimeout(rpulse, 1);
+    rpulseinterval = window.setTimeout(rpulse, 31);
 		var earray = new Uint8Array(1);
 		rwordcode = window.crypto.getRandomValues(earray)[0];
 		rwordcycle();

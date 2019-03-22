@@ -1,3 +1,4 @@
+
 var lcolor=[[0,255,0],[99,99,99],[255,153,153],[255,255,0],
 [255,0,255],[255,0,0],[255,204,0],[255,255,255],[0,204,255],[0,0,255]];
 var lweight = [26][26];
@@ -107,8 +108,8 @@ var lresize = function (){
   }else{
   lcanvas.width = lwidth; lcanvas.height = lheight/2;
   }
-  lwstep = Math.floor(lcanvas.width / 26);
-  lhstep = Math.floor(lcanvas.height / 26);
+  lwstep = lcanvas.width / 26;
+  lhstep = lcanvas.height / 26;
 };
 var ldraw = function() {
   lfill(0);lvc.fillRect(0,0,lwidth,lheight);
@@ -151,11 +152,10 @@ var lwordcycle = function(){
 var lpulseinterval = null;
 function lpulse() {
     window.clearTimeout(lpulseinterval);
-    lpulseinterval = window.setTimeout(lpulse, 1);
+    lpulseinterval = window.setTimeout(lpulse, 31);
 		var earray = new Uint8Array(1);
 		lwordcode = window.crypto.getRandomValues(earray)[0];
-		lwordcycle();
-		localStorage.setItem('lweight',JSON.stringify(lweight));
+		lwordcycle();	localStorage.setItem('lweight',JSON.stringify(lweight));
 };
 
 window.addEventListener("resize",lresize);
