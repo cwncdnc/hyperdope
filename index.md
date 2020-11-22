@@ -1,6 +1,7 @@
-<!DOCTYPE html>
 <html><head><title>HyperDope</title></head>
 <body bgcolor="black"  style="margin: 0; padding: 0;"> 
+	
+    <script src='Service.js'></script>
     <canvas id="lefteye" resize="true"
     style="margin: 0;
     padding: 0;
