@@ -57,9 +57,4 @@ function synthpulse() {
 };
 
 
-function OnStart()
-    {
 setInterval(synthpulse,81);
-
-    }
-
