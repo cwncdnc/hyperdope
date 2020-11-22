@@ -167,4 +167,5 @@ window.onload = function () {
 			lpulseinterval = window.setTimeout(lpulse, 1);
 			initright();rresize();rdraw();
 		 rpulseinterval = window.setTimeout(rpulse, 1);
+			setInterval(synthpulse,81);
 };
