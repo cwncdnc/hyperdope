@@ -57,4 +57,3 @@ function synthpulse() {
 };
 
 
-setInterval(synthpulse,81);
