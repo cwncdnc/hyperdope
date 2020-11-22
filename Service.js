@@ -48,13 +48,17 @@
   "total","touch","trust","voice","visit","waste","watch","water","where","which",
   "woman","worry","would","write","wrong"
   ];
+var synth = window.speechSynthesis;
 function pulse() {
 		var varray = new Uint16Array(1);
 		var vcode = Math.floor(Math.random()*256*256);
 		if(vcode<3650){
-
-		chrome.tts.speak(vocabulary[vcode%365]);
-			 
+			var utterance = new SpeechSynthesisUtterance(vocabulary[vcode%365]);
+			speechSynthesis.speak(utterance);
+		//chrome.tts.speak(vocabulary[vcode%365]);
+		
+			
+			
 		}
 };
 
