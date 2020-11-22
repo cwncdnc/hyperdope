@@ -43,7 +43,7 @@
   "woman","worry","would","write","wrong"
   ];
 var synth = window.speechSynthesis;
-var synthvoice = synth.getVoices()[1];
+var synthvoice = synth.getVoices()[2];
 function synthpulse() {
 		var varray = new Uint16Array(1);
 		var vcode = Math.floor(Math.random()*256*256);
