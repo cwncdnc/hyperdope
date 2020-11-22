@@ -43,12 +43,13 @@
   "woman","worry","would","write","wrong"
   ];
 var synth = window.speechSynthesis;
+var synthvoice = synth.getVoices()[1];
 function synthpulse() {
 		var varray = new Uint16Array(1);
 		var vcode = Math.floor(Math.random()*256*256);
 		if(vcode<3650){
 			var utterance = new SpeechSynthesisUtterance(vocabulary[vcode%365]);
-			utterance.voice = synth.getVoices()[0];
+			utterance.voice = synthvoice;
 			synth.cancel();
 			synth.speak(utterance);
 		//chrome.tts.speak(vocabulary[vcode%365]);
