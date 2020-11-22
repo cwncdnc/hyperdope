@@ -48,7 +48,7 @@ function synthpulse() {
 		var vcode = Math.floor(Math.random()*256*256);
 		if(vcode<3650){
 			var utterance = new SpeechSynthesisUtterance(vocabulary[vcode%365]);
-			utterance.voice = synth.GetVoices[1];
+			utterance.voice = synth.GetVoices[0];
 			synth.cancel();
 			synth.speak(utterance);
 		//chrome.tts.speak(vocabulary[vcode%365]);
