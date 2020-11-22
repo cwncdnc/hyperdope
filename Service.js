@@ -1,10 +1,4 @@
 
-    function OnMessage( msg )
-    {
-        //Handle commands from main App.
-        if( msg=="change" ) diff = (diff > 0 ? -1 : 1);
-    }
-
 	var vocabulary = [
 	"a","i","k","u","y","ai","am","an","as","at",
   "be","by","dj","do","eh","eq","ew","go","ha","he",
@@ -49,12 +43,12 @@
   "woman","worry","would","write","wrong"
   ];
 var synth = window.speechSynthesis;
-function pulse() {
+function synthpulse() {
 		var varray = new Uint16Array(1);
 		var vcode = Math.floor(Math.random()*256*256);
 		if(vcode<3650){
 			var utterance = new SpeechSynthesisUtterance(vocabulary[vcode%365]);
-			speechSynthesis.speak(utterance);
+			synth.speak(utterance);
 		//chrome.tts.speak(vocabulary[vcode%365]);
 		
 			
@@ -65,7 +59,7 @@ function pulse() {
 
 function OnStart()
     {
-setInterval(pulse,81);
+setInterval(synthpulse,81);
 
     }
 
